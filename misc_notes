@@ -1,0 +1,55 @@
+# students class, get data from the db and make it usable format
+# 	-class methods, like Find student(1)
+# sinatra app
+# 	-dont worry about the index page
+# 	-hardcode the data, then try to replicate the view
+# 	use sqlite3 gem, not necessary for data mapper
+
+
+# id
+							# name
+							# tag_line
+							# bio
+							# mail
+							# blog
+							# linkedin
+							# twitter
+							# github
+							# codeschool
+							# coderwall
+							# stackoverflow
+							# teamtreehouse
+
+
+							#sinatra 
+								# get '/find/:id' do |id|
+								# 	student = Student.new
+								# 	student.find_student(id)
+								# 	# @test = id
+								# 	# testabc = id.class
+								# 	"id -> #{id}"
+								# end
+
+										# all possible routes:
+			# index
+			# find_student(id)
+			# studentname.html
+
+
+
+
+			<p>name:<%= @person.name %></p>
+<p>tag_line:<%= @person.tag_line %></p>
+<p>bio:<%= @person.bio %></p>
+<p>mail:<%= @person.mail %></p>
+<p>blog:<%= @person.blog %></p>
+<p>linkedin:<%= @person.linkedin %></p>
+<p>twitter:<%= @person.twitter %></p>
+<p>github:<%= @person.github %></p>
+<p>codeschool:<%= @person.codeschool %></p>
+<p>coderwall:<%= @person.coderwall %></p>
+<p>stackoverflow:<%= @person.stackoverflow %></p>
+<p>teamtreehouse:<%= @person.teamtreehouse %></p>
+
+
+<p><a href="find_student/<%=s[0]%>"><%=s[1]</a> - <%=s[2]%></p>
