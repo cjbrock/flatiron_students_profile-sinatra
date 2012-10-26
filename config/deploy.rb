@@ -5,13 +5,13 @@ set :repository,  "git://github.com/cjbrock/flatiron_students_profile-sinatra.gi
 
 set :scm, :git
 set :user, "cjnboston"
-set :deploy_to, "/home/#{ user }/#{ application } "
+set :deploy_to, "/home/#{ user }/#{ application }"
 set :use_sudo, false
 
 default_run_options[:pty] = true
 
 role :web, "96.8.123.75"                          # Your HTTP server, Apache/etc
-role :app, "your app-server here"                          # This may be the same as your `Web` server
+role :app, "96.8.123.75"                          # This may be the same as your `Web` server
 
 
 # if you want to clean up old releases on each deploy uncomment this:
